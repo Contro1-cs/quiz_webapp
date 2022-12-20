@@ -200,10 +200,9 @@ class _QuizPageState extends State<QuizPage> {
               ],
             ),
           ),
-          const SizedBox(height: 150),
           Expanded(
             child: Align(
-              alignment: Alignment.bottomCenter,
+              alignment: Alignment.center,
               child: Center(
                 child: TextButton(
                   onPressed: () {
@@ -256,8 +255,7 @@ class _QuizPageState extends State<QuizPage> {
                     }
                   },
                   child: Container(
-                    margin: EdgeInsets.fromLTRB(w / 3, 0, w / 3, 0),
-                    width: w,
+                    width: w / 3,
                     height: 50,
                     alignment: Alignment.center,
                     padding: const EdgeInsets.only(left: 100, right: 100),
@@ -266,8 +264,8 @@ class _QuizPageState extends State<QuizPage> {
                         borderRadius: BorderRadius.circular(8)),
                     child: Text(
                       _questionIndex == questions_list.length - 1
-                          ? 'Next'
-                          : 'Finish',
+                          ? 'Finish'
+                          : 'Next',
                       style: GoogleFonts.poppins(color: Colors.white),
                     ),
                   ),
