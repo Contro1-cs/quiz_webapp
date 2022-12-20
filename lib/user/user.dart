@@ -1,15 +1,4 @@
-List user = [
-  {
-    'name': '',
-    'answer 1': '',
-    'answer 2': '',
-    'answer 3': '',
-    'answer 4': '',
-    'answer 5': '',
-    'answer 6': '',
-    'answer 7': '',
-    'answer 8': '',
-    'answer 9': '',
-    'answer 10': '',
-  }
-];
+List user = [];
+
+
+//We can also user User class if we want but I user simple List for simplicity

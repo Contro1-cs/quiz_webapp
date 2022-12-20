@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:internship_web_app_assignment/questions/answer_key.dart';
 import 'package:internship_web_app_assignment/questions/answers.dart';
+import 'package:internship_web_app_assignment/user/user.dart';
 
 class Results extends StatefulWidget {
   const Results({super.key});
@@ -36,6 +37,7 @@ class _ResultsState extends State<Results> {
                     fontWeight: FontWeight.bold),
               ),
             ),
+            Text('username -  ${user[0]}'),
             Container(
               alignment: Alignment.center,
               width: 400,
