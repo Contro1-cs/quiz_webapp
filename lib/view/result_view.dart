@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:internship_web_app_assignment/questions/answer_key.dart';
 import 'package:internship_web_app_assignment/questions/answers.dart';
-import 'package:internship_web_app_assignment/questions/questions_list.dart';
 
 class Results extends StatefulWidget {
   const Results({super.key});
@@ -16,7 +15,6 @@ var _points = 0;
 class _ResultsState extends State<Results> {
   @override
   Widget build(BuildContext context) {
-    var w = MediaQuery.of(context).size.width;
     for (int i = 0; i < answers.length; i++) {
       if (answers[i] == answer_key[i]) {
         _points++;

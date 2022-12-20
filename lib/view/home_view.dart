@@ -26,7 +26,7 @@ class HomeView extends StatelessWidget {
         children: [
           const SizedBox(height: 100),
           Padding(
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               left: 50,
               right: 50,
             ),
@@ -54,13 +54,13 @@ class HomeView extends StatelessWidget {
           Center(
             child: TextButton(
               onPressed: () => Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => QuizPage())),
+                  context, MaterialPageRoute(builder: (context) =>const QuizPage())),
               child: Container(
                 margin: EdgeInsets.fromLTRB(w / 3, 0, w / 3, 0),
                 width: w,
                 height: 50,
                 alignment: Alignment.center,
-                padding: EdgeInsets.only(left: 100, right: 100),
+                padding: const EdgeInsets.only(left: 100, right: 100),
                 decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(8)),
