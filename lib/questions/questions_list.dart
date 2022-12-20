@@ -1,4 +1,3 @@
-
 List questions_list = [
   {
     'question': 'What planet do we live on?',
@@ -61,7 +60,7 @@ List questions_list = [
     'option 1': 'the Weekend',
     'option 2': '21 Savage',
     'option 3': 'Migos',
-    'option 4': 'Kendrick',
+    'option 4': 'Kendrick Lamar',
   },
   {
     'question': 'What is the powerhouse of the cell?',

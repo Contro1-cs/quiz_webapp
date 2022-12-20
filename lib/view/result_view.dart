@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:internship_web_app_assignment/questions/answer_key.dart';
 import 'package:internship_web_app_assignment/questions/answers.dart';
 
 class Results extends StatefulWidget {
@@ -25,9 +26,11 @@ class _ResultsState extends State<Results> {
                   fontWeight: FontWeight.bold),
             ),
           ),
-          SizedBox(
+          Container(
             width: 200,
-            height: 50,
+            height: 600,
+            padding: const EdgeInsets.only(bottom: 50),
+            decoration: BoxDecoration(border: Border.all(color: Colors.black)),
             // color: Colors.red,
             child: ListView.builder(
               itemCount: answers.length,
@@ -39,7 +42,9 @@ class _ResultsState extends State<Results> {
                       textStyle: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: 18,
-                        color: Color(0xff8288C3),
+                        color: answers[index] == answer_key[index]
+                            ? Colors.green
+                            : Colors.red,
                       ),
                     ),
                   ),

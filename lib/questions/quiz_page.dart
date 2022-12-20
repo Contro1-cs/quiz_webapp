@@ -208,6 +208,15 @@ class _QuizPageState extends State<QuizPage> {
                 child: TextButton(
                   onPressed: () {
                     if (_questionIndex == questions_list.length - 1) {
+                      if (opt1Selected == true) {
+                        answers.add(questions_list[_questionIndex]['option 1']);
+                      } else if (opt2Selected == true) {
+                        answers.add(questions_list[_questionIndex]['option 2']);
+                      } else if (opt3Selected == true) {
+                        answers.add(questions_list[_questionIndex]['option 3']);
+                      } else if (opt4Selected == true) {
+                        answers.add(questions_list[_questionIndex]['option 4']);
+                      }
                       Navigator.push(
                         context,
                         MaterialPageRoute(
